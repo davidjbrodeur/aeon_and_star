@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aeon & Star</title>
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script defer src="/__/firebase/9.17.2/firebase-app-compat.js"></script>
+  </head>
+  <body>
+    <header id="home">
+      <div class="logo">
+        <a href="#home"
+          ><img id="logo" src="./img/logo.png" alt="Aeon & Star Interactive"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#games">Our Games</a></li>
+          <li><a href="#follow-us">Follow Us</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="under-construction">
+        <div class="under-construction-container">
+          <span>Under construction</span>
+          <span id="moving-dots">...</span>
+        </div>
+        <h2>Meanwhile, subscribe to our mailing list:</h2>
+        <form action="">
+          <label for="email-input">Email:</label>
+          <input type="email" id="email-input" name="email-input" /> <br />
+          <input
+            onclick="alert('Under construction. Try again later or contac the admin at admin@aeonstarinteractive.com')"
+            type="button"
+            value="Subscribe"
+            class="subscription-button"
+          />
+          <div id="error-message"></div>
+        </form>
+      </section>
+      <!-- <section id="about"></section>
+        <section id="games"></section>
+        <section id="follow-us"></section>
+        <section id="contact-us"></section> -->
+    </main>
+    <footer>
+      <p>&copy; Aeon & Star Interactive <span id="currentYear"></span></p>
+    </footer>
+    <script src="scripts/frontend.js"></script>
+  </body>
+</html>
