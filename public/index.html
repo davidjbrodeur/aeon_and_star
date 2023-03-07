@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Aeon & Star</title>
+    <title>Aeon & Star Interactive</title>
     <link rel="icon" type="image/png" href="./img/favicon.png" />
     <link rel="stylesheet" href="./styles/style.css" />
     <script defer src="/__/firebase/9.17.2/firebase-app-compat.js"></script>
@@ -21,19 +21,32 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
           <li><a href="#games">Our Games</a></li>
           <li><a href="#follow-us">Follow Us</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#contact-us">Contact Us</a></li>
         </ul>
       </nav>
     </header>
+    <br />
     <main>
+      <br />
+      <section id="games" class="our-games">
+        <h1>Our Games</h1>
+      </section>
       <section class="under-construction">
         <div class="under-construction-container">
           <span>Under construction</span>
           <span id="moving-dots">...</span>
+          <p>
+            Meanwhile, subscribe to our
+            <a href="#follow-us"><strong>mailing list</strong></a>
+          </p>
         </div>
+      </section>
+      <br />
+      <section id="follow-us">
+        <h1>Follow Us</h1>
         <!-- Begin Mailchimp Signup Form -->
         <div id="mc_embed_signup">
           <form
@@ -46,7 +59,6 @@
             novalidate
           >
             <div id="mc_embed_signup_scroll">
-              <h2>Meanwhile, subscribe to our mailing list:</h2>
               <div class="indicates-required">
                 <span class="asterisk">*</span> indicates required
               </div>
@@ -126,23 +138,35 @@
           </form>
         </div>
         <!--End mc_embed_signup-->
-        <!-- <form action="">
-          <label for="email-input">Email:</label>
-          <input type="email" id="email-input" name="email-input" /> <br />
-          <input
-            onclick="alert('Under construction. Try again later or contac the admin at admin@aeonstarinteractive.com')"
-            type="button"
-            value="Subscribe"
-            class="subscription-button"
-          />
-          <div id="error-message"></div>
-        </form> -->
       </section>
-      <!-- <section id="about"></section>
-        <section id="games"></section>
-        <section id="follow-us"></section>
-        <section id="contact-us"></section> -->
+      <section id="about" class="about">
+        <h1>About Us</h1>
+        <br />
+        <div class="three-columns-content">
+          <div class="left-column">
+            Founded in 2023 by friends and family, Aeon & Star Interactive
+            started working on our first game <strong>Steel Legion</strong>, a
+            8-bit NES retro metroidvania. Our goal is to create interesting,
+            thoughtful and old school games. Come join us!
+          </div>
+          <div class="middle-column">
+            <blockquote>
+              Small indie video game studio from Quebec, Canada
+            </blockquote>
+          </div>
+          <div class="right-column">
+            <ul>
+              <li><strong>Rox</strong> : Producer, business</li>
+              <li><strong>Dave</strong> : Lead tech, music, design</li>
+              <li><strong>Frank</strong> : 2d pixel art, sound</li>
+              <li><strong>Marc</strong> : Design, marketing</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <br />
     </main>
+    <br />
     <footer>
       <ul>
         <li>
