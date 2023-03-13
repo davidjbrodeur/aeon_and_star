@@ -361,7 +361,3 @@ footer ul {
     opacity: 1;
     /* Set the opacity to 1 when the show class is added */
 }
-
-.under-construction {
-    display: none;
-}
