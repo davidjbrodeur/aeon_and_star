@@ -27,6 +27,10 @@ a {
     color: inherit;
 }
 
+.space-between-sections {
+    padding: 2vh;
+}
+
 header,
 footer {
     background-color: var(--accent-color);
@@ -36,6 +40,7 @@ footer {
 
 header {
     display: flex;
+    gap: 3vw;
 }
 
 .logo {
@@ -44,29 +49,51 @@ header {
     justify-content: center;
 }
 
-header ul,
-footer ul {
+nav ul {
     display: flex;
-    gap: 10vw;
+    gap: 4vw;
     font-size: 2.5rem;
 }
 
-header ul li:hover,
-footer ul li:hover {
+.vertical-align {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-left: 2vw;
+}
+
+.vertical-line {
+    border-left: 1px solid var(--light-color);
+    height: 5rem;
+}
+
+.media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.media ul {
+    display: flex;
+    gap: 1vw;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+header ul li:hover {
     border-color: var(--light-color);
     border-radius: 5px;
 }
 
-header ul li,
-footer ul li {
+header ul li {
     position: relative;
     padding: 10px;
     border: 1px solid transparent;
     transition: all 0.5s ease;
 }
 
-header ul li:hover:before,
-footer ul li:hover:before {
+header ul li:hover:before {
     content: '';
     position: absolute;
     top: -5px;
@@ -112,10 +139,96 @@ section {
     padding-bottom: 10vh;
 }
 
+h1 {
+    font-size: 3rem;
+    margin-bottom: 3vh;
+}
+
+.game-card {
+    display: flex;
+    gap: 5vw;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border-radius: 15px;
+    padding: 2vh;
+}
+
+.left-column-card {
+    border-radius: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-column-card img {
+    border-radius: inherit;
+    height: auto;
+    width: 75%;
+    margin-left: 5vw;
+    transition: transform 0.25s ease;
+    cursor: zoom-in;
+}
+
+.game-card input[type=checkbox] {
+    display: none;
+}
+
+.left-column-card [type=checkbox]:checked~label>img {
+    transform: scale(2);
+    cursor: zoom-out;
+}
+
+.right-column-card [type=checkbox]:checked~label>img {
+    transform: scale(2);
+    cursor: zoom-out;
+}
+
+.right-column-card img {
+    border-radius: inherit;
+    height: auto;
+    width: 75%;
+    transition: transform 0.25s ease;
+    cursor: zoom-in;
+}
+
+.game-card .vertical-line {
+    height: 15rem;
+}
+
+.right-column-card {
+    width: 30vw;
+    font-size: 1.1em;
+}
+
+.right-column-card {
+    text-align: left;
+}
+
+.zoomable-image {
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+}
+
+.zoomed-image {
+    max-width: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    /* Add any other styles you want here */
+}
+
 hr {
     border-color: var(--dark-color);
     border-style: solid;
-    width: 15vw;
+    width: 10vw;
+}
+
+.longer-line {
+    width: 20vw;
 }
 
 .under-construction {
@@ -219,4 +332,36 @@ footer ul {
     display: flex;
     gap: 5vw;
     align-items: center;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    /* Hidden by default */
+    font-size: 32px;
+    line-height: 1;
+    padding: 10px;
+    background-color: var(--accent-color);
+    color: var(--light-color);
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    z-index: 9999;
+    opacity: 0;
+    /* Set the opacity to 0 by default */
+    transition: opacity 0.5s ease-in-out;
+    /* Add a transition effect to the opacity property */
+}
+
+.back-to-top.show {
+    display: block;
+    opacity: 1;
+    /* Set the opacity to 1 when the show class is added */
+}
+
+.under-construction {
+    display: none;
 }
